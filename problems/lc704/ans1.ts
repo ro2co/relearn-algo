@@ -2,9 +2,7 @@ function search(nums: number[], target: number): number {
   let left = 0
   let right = nums.length - 1
   // 左闭右闭
-
   while (left <= right) {
-    
     let middle: number = left + ((right-left)>>1)
     if (target > nums[middle]) {
       left = middle +1      
@@ -15,10 +13,7 @@ function search(nums: number[], target: number): number {
     }
   }
   return -1
-  
-  //num = 10
 };
-
 
 
 const arr = [-2, 1,4,5,6,11,20]
